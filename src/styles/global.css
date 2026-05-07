@@ -1,0 +1,27 @@
+:root {
+  --bg: #f5f3ee;
+  --ink: #1a1814;
+  --muted: #8a857a;
+  --accent: #c9401a;
+  --line: #dedad3;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --mono: 'DM Mono', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.7;
+}

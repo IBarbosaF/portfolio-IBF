@@ -1,0 +1,217 @@
+<section id="proyectos">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Proyectos</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <span class="project-tag">Freelance · TFM Máster</span>
+      <h3>Pole LLimona Dance</h3>
+      <p class="project-desc">
+        Aplicación web de gestión integral para un estudio de pole dance en Girona. 
+        Sistema con tres roles de usuario — administración, profesoras y alumnas — 
+        con reserva de clases en tiempo real, sistema de créditos por tarifa y 
+        panel de administración completo.
+      </p>
+      <ul class="project-highlights">
+        <li>Internacionalización en 4 idiomas (ES/CA/EN/FR)</li>
+        <li>SEO técnico completo con Schema.org y Google Places API</li>
+        <li>Cumplimiento RGPD y despliegue en VPS IONOS</li>
+      </ul>
+      <div class="project-footer">
+        <div class="project-stack">
+          <span class="tag">Angular 19</span>
+          <span class="tag">Spring Boot 3</span>
+          <span class="tag">MySQL 8</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Nginx</span>
+        </div>
+        <a href="https://polellimonadance.com" target="_blank" class="project-link">
+          Ver proyecto ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card project-next">
+      <div class="next-content">
+        <span class="project-tag">Próximo proyecto</span>
+        <h3>¿El tuyo?</h3>
+        <p class="project-desc">
+          Estoy disponible para nuevos proyectos freelance. 
+          Si tienes una idea o necesitas un desarrollador 
+          Full Stack, hablemos.
+        </p>
+        <ul class="project-highlights">
+          <li>Desarrollo web a medida</li>
+          <li>Frontend, backend y despliegue</li>
+          <li>Desde la idea hasta producción</li>
+        </ul>
+      </div>
+      <div class="project-footer">
+        <p class="next-sub">Sin compromiso, solo una conversación.</p>
+        <a href="#contacto" class="project-link">Contactar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #proyectos {
+    padding: 7rem 3rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .section-num {
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+    margin-left: 1rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .project-card {
+    background: var(--bg);
+    padding: 3rem;
+    transition: background 0.25s;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .project-card:hover {
+    background: #edeae3;
+  }
+
+  .project-next {
+    border: 2px dashed var(--line);
+    background: transparent;
+    justify-content: space-between;
+  }
+
+  .project-next:hover {
+    border-color: var(--accent);
+    background: transparent;
+  }
+
+  .next-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .next-sub {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .project-tag {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--accent);
+    display: inline-block;
+    width: fit-content;
+  }
+
+  h3 {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .project-desc {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .project-highlights {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .project-highlights li {
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .project-highlights li::before {
+    content: '→';
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 0.25rem 0.6rem;
+    background: var(--line);
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  .project-link {
+    font-size: 12px;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  .project-link:hover {
+    color: var(--accent);
+  }
+</style>

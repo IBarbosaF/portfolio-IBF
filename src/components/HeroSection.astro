@@ -1,0 +1,138 @@
+<section id="inicio">
+  <div class="hero-left">
+    <p class="hero-tag">Disponible para proyectos</p>
+    <h1>Ignacio<br><em>Barbosa</em><br>Ferrer.</h1>
+    <p class="hero-bio">
+      Desarrollador Full Stack con proyectos reales en producción. 
+      Construyo aplicaciones web completas de principio a fin. 
+      Desde la interfaz hasta el servidor, el despliegue y el SEO.
+    </p>
+    <a href="#proyectos" class="hero-cta">Ver proyectos →</a>
+  </div>
+  <div class="hero-right">
+    <div class="hero-code">
+      <div class="code-comment">// developer.config.js</div>
+      <br>
+      <div><span class="code-key">const</span> <span class="code-val"> developer</span> = &#123;</div>
+      <div>&nbsp;&nbsp;<span class="code-key">nombre</span>: <span class="code-str">"Ignacio Barbosa"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="code-key">rol</span>: <span class="code-str">"Full-Stack Developer"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="code-key">areas</span>: &#123;</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">front</span>: <span class="code-str">"Angular - TypeScript"</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">back</span>: <span class="code-str">"Spring Boot - REST APIs"</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">bbdd</span>: <span class="code-str">"MySQL - JPA/Hibernate"</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">infra</span>: <span class="code-str">"VPS - Nginx - SSL"</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-key">seo</span>: <span class="code-str">"Schema.org - Open Graph"</span>,</div>
+      <div>&nbsp;&nbsp;&#125;,</div>
+      <div>&nbsp;&nbsp;<span class="code-key">ubicacion</span>: <span class="code-str">"Sevilla, Girona - Remoto"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="code-key">disponible</span>: <span class="code-val">true</span></div>
+      <div>&#125;</div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #inicio {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 72px;
+  }
+
+  .hero-left {
+    padding: 6rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-tag {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-bio {
+    color: var(--muted);
+    max-width: 400px;
+    margin-bottom: 3rem;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 0.9rem 1.8rem;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.2s;
+    width: fit-content;
+  }
+
+  .hero-cta:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .hero-right {
+    border-left: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  .hero-code {
+    width: 100%;
+    max-width: 380px;
+    background: var(--ink);
+    color: #c8c3bb;
+    padding: 2rem;
+    font-size: 12px;
+    line-height: 1.9;
+    position: relative;
+  }
+
+  .hero-code::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent);
+  }
+
+  .code-comment { color: #5a564f; }
+  .code-key { color: #e8a87c; }
+  .code-val { color: #98d4a3; }
+  .code-str { color: #f0c27f; }
+</style>
