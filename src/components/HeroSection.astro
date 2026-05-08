@@ -135,4 +135,26 @@
   .code-key { color: #e8a87c; }
   .code-val { color: #98d4a3; }
   .code-str { color: #f0c27f; }
+
+  @media (max-width: 768px) {
+    #inicio {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-left {
+      padding: 5rem 1.5rem 3rem;
+    }
+
+    .hero-right {
+      border-left: none;
+      border-top: 1px solid var(--line);
+      padding: 2rem 1.5rem;
+    }
+
+    .hero-code {
+      max-width: 100%;
+      font-size: 11px;
+    }
+  }
 </style>

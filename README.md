@@ -1,6 +1,6 @@
 # Portfolio — Ignacio Barbosa Ferrer
 
-Portfolio personal desarrollado con Astro. Diseño minimalista con arquitectura de componentes limpia.
+Portfolio personal desarrollado con Astro. Diseño minimalista, responsive y con arquitectura de componentes limpia.
 
 🌐 **[Ver portfolio](https://IBarbosaF.github.io/portfolio-IBF)**
 

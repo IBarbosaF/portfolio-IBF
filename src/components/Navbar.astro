@@ -1,9 +1,16 @@
 <nav>
   <a href="/" class="logo">Ignacio Barbosa</a>
-  <ul>
+  
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul id="nav-menu">
     <li><a href="#sobre">Sobre mí</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
     <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
@@ -46,4 +53,82 @@
   ul a:hover {
     color: var(--ink);
   }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--ink);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      padding: 1.2rem 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+      border-top: 1px solid var(--line);
+      margin-top: 1rem;
+    }
+
+    ul.open {
+      display: flex;
+    }
+
+    ul li a {
+      display: block;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 13px;
+    }
+  }
 </style>
+
+<script>
+  const hamburger = document.getElementById('hamburger') as HTMLElement
+  const menu = document.getElementById('nav-menu') as HTMLElement
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open')
+    menu.classList.toggle('open')
+  })
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open')
+      menu.classList.remove('open')
+    })
+  })
+</script>
